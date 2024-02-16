@@ -1,5 +1,6 @@
 package hw4;
 
+import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 public class HW4_5 {
@@ -17,8 +18,10 @@ public class HW4_5 {
 
 		sc.close();
 
-		boolean isLeapYear = year(yy);
+		GregorianCalendar cal = new GregorianCalendar();
+		boolean isLeapYear = cal.isLeapYear(yy);
 
+		
 		if (isLeapYear == true) {
 			
 						if (mm == 2 && dd > 29) {
@@ -44,9 +47,9 @@ public class HW4_5 {
 //		LocalDate date = LocalDate.parse(yy + mm + dd, formatter);
 //		System.out.println(date.isLeapYear());
 
-				public static boolean year(int year) {
-					return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-				}
+//				public static boolean year(int year) {
+//					return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+//				}
 			
 				
 				
